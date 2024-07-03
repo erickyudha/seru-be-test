@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+const app = require('../app');
+const {PORT = 8000} = process.env;
+
+app.listen(PORT, () => {
+  console.log('Server running on http://localhost:' + PORT);
+  console.log('Documentation: http://localhost:' + PORT + '/docs');
+});
