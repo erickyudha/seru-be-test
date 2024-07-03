@@ -1,0 +1,19 @@
+{
+  "name": "seru-be-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erickyudha/seru-be-test.git"
+  },
+  "author": "erickyudha@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erickyudha/seru-be-test/issues"
+  },
+  "homepage": "https://github.com/erickyudha/seru-be-test#readme"
+}
