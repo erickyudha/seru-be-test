@@ -3,24 +3,24 @@ class BaseService {
         this.repository = repository;
     }
 
-    async getAll(limit, offset, where) {
-        return await this.repository.getAll(limit, offset, where);
+    getAll(limit, offset, where) {
+        return this.repository.getAll(limit, offset, where);
     }
 
-    async getById(id) {
-        return await this.repository.getById(id);
+    getById(id) {
+        return this.repository.getById(id);
     }
 
-    async create(data) {
-        return await this.repository.create(data);
+    create(data) {
+        return this.repository.create(data);
     }
 
-    async update(id, data) {
-        return await this.repository.update(id, data);
+    update(id, data) {
+        return this.repository.update(id, data);
     }
 
-    async delete(id) {
-        return await this.repository.delete(id);
+    delete(id) {
+        return this.repository.delete(id);
     }
 }
 

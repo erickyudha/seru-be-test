@@ -1,5 +1,5 @@
-const {BaseRepository} = require('./BaseRepository');
-const { VehicleModel } = require('../models');
+const BaseRepository = require('./BaseRepository');
+const models = require('../models');
 
 class VehicleModelRepository extends BaseRepository {
   constructor(model) {
@@ -7,4 +7,4 @@ class VehicleModelRepository extends BaseRepository {
   }
 }
 
-module.exports = new VehicleModelRepository(VehicleModel);
+module.exports = new VehicleModelRepository(models.VehicleModel);

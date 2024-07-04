@@ -3,7 +3,7 @@ const VehicleBrandService = require('../services/VehicleBrandService');
 
 class VehicleBrandController extends BaseController {
     constructor(service) {
-        this.baseService = service;
+        super('vehicle brand', service)
     }
 }
 

@@ -1,5 +1,12 @@
-const {BaseRepository} = require('./BaseRepository');
-const { Pricelist, VehicleModel, VehicleType, VehicleBrand, VehicleYear } = require('../models');
+const BaseRepository = require('./BaseRepository');
+const {
+  Pricelist,
+  User,
+  VehicleBrand,
+  VehicleModel,
+  VehicleType,
+  VehicleYear
+} = require('../models');
 
 class PricelistRepository extends BaseRepository {
   constructor(pricelistModel) {

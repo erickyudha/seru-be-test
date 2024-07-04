@@ -1,28 +1,27 @@
 class BaseRepository {
-    constructor(model) {
-        this.model = model;
-    }
+  constructor(model) {
+    this.model = model;
+  }
 
-    async getAll(limit, offset, where) {
-        const { count, rows } = await this.model.findAndCountAll({ limit, offset, where });
-        return { total: count, data: rows };
-      }
-    
-      async getById(id) {
-        return await this.model.findByPk(id);
-      }
-    
-      async create(data) {
-        return await this.model.create(data);
-      }
-    
-      async update(id, data) {
-        return await this.model.update(data, { where: { id } });
-      }
-    
-      async delete(id) {
-        return await this.model.destroy({ where: { id } });
-      }
+  getAll(limit, offset, where) {
+    return this.model.findAndCountAll({ limit, offset, where });
+  }
+
+  getById(id) {
+    return this.model.findByPk(id);
+  }
+
+  create(data) {
+    return this.model.create(data);
+  }
+
+  update(id, data) {
+    return this.model.update(data, { where: { id } });
+  }
+
+  delete(id) {
+    return this.model.destroy({ where: { id } });
+  }
 }
 
 module.exports = BaseRepository;

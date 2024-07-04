@@ -3,7 +3,7 @@ const VehicleYearService = require('../services/VehicleYearService');
 
 class VehicleYearController extends BaseController {
     constructor(service) {
-        this.baseService = service;
+        super('vehicle year', service)
     }
 }
 

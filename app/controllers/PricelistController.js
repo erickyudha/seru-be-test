@@ -3,8 +3,9 @@ const PricelistService = require('../services/PricelistService');
 
 class PricelistController extends BaseController {
     constructor(service) {
-        this.baseService = service;
+        super('pricelist', service)
     }
 }
+
 
 module.exports = new PricelistController(PricelistService);

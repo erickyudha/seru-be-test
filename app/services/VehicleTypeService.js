@@ -1,5 +1,5 @@
 const vehicleTypeRepository = require('../repositories/VehicleTypeRepository');
-const {BaseService} = require('./BaseService')
+const BaseService = require('./BaseService')
 
 class VehicleTypeService extends BaseService {
   constructor(repository) {
