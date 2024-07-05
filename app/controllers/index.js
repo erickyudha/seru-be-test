@@ -1,3 +1,4 @@
+const AuthController = require('./AuthController');
 const PricelistController = require('./PricelistController');
 const UserController = require('./UserController');
 const VehicleBrandController = require('./VehicleBrandController');
@@ -11,5 +12,6 @@ module.exports = {
     VehicleBrandController,
     VehicleModelController,
     VehicleTypeController,
-    VehicleYearController
+    VehicleYearController,
+    AuthController
 }

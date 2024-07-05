@@ -1,67 +1,38 @@
 const BaseRepository = require('./BaseRepository');
-const {
-  Pricelist,
-  User,
-  VehicleBrand,
-  VehicleModel,
-  VehicleType,
-  VehicleYear
-} = require('../models');
+const models = require('../models');
 
 class PricelistRepository extends BaseRepository {
-  constructor(pricelistModel) {
+  constructor(pricelistModel, models) {
     super(pricelistModel)
+    this.model = pricelistModel;
+    this.models = models;
   }
 
-  async getAll(limit, offset, where) {
-    const { count, rows } = await this.model.findAndCountAll({
-      limit,
-      offset,
-      where,
-      include: [
+  getAll(limit, offset, where) {
+    return this.model.findAndCountAll({
+      limit, offset, where, include: [
         {
-          model: VehicleModel,
-          include: [
-            {
-              model: VehicleType,
-              include: [
-                {
-                  model: VehicleBrand
-                }
-              ]
-            }
-          ]
+          model: this.models.VehicleYear
         },
         {
-          model: VehicleYear
+          model: this.models.VehicleModel
         }
       ]
     });
-    return { total: count, data: rows };
   }
 
-  async getById(id) {
-    return await this.model.findByPk(id, {
+  getById(id) {
+    return this.model.findByPk(id, {
       include: [
         {
-          model: VehicleModel,
-          include: [
-            {
-              model: VehicleType,
-              include: [
-                {
-                  model: VehicleBrand
-                }
-              ]
-            }
-          ]
+          model: this.models.VehicleYear
         },
         {
-          model: VehicleYear
+          model: this.models.VehicleModel
         }
       ]
     });
   }
 }
 
-module.exports = new PricelistRepository(Pricelist);
+module.exports = new PricelistRepository(models.Pricelist, models);

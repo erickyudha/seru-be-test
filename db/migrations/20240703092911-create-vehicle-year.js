@@ -10,7 +10,8 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       year: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        unique: true,
       },
       createdAt: {
         allowNull: false,
