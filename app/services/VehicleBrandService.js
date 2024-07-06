@@ -1,5 +1,5 @@
-const vehicleBrandRepository = require('../repositories/vehicleBrandRepository');
 const BaseService = require('./BaseService')
+const VehicleBrandRepository = require('../repositories/VehicleBrandRepository');
 
 class VehicleBrandService extends BaseService {
   constructor(repository) {
@@ -7,4 +7,4 @@ class VehicleBrandService extends BaseService {
   }
 }
 
-module.exports = new VehicleBrandService(vehicleBrandRepository);
+module.exports = new VehicleBrandService(VehicleBrandRepository);

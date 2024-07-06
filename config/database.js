@@ -1,7 +1,7 @@
 require('dotenv').config();
 const {
-  DB_USER = '',
-  DB_PASSWORD = '',
+  DB_USER = 'postgres',
+  DB_PASS = 'postgres',
   DB_NAME = 'seru_car',
   DB_HOST = 'localhost',
   DB_PORT = '5432',
@@ -11,7 +11,7 @@ const {
 module.exports = {
   development: {
     username: DB_USER,
-    password: DB_PASSWORD,
+    password: DB_PASS,
     database: `${DB_NAME}_development`,
     host: DB_HOST,
     port: DB_PORT,
@@ -20,7 +20,7 @@ module.exports = {
   },
   test: {
     username: DB_USER,
-    password: DB_PASSWORD,
+    password: DB_PASS,
     database: `${DB_NAME}_test`,
     host: DB_HOST,
     port: DB_PORT,
@@ -29,7 +29,7 @@ module.exports = {
   },
   production: {
     username: DB_USER,
-    password: DB_PASSWORD,
+    password: DB_PASS,
     database: `${DB_NAME}`,
     host: DB_HOST,
     port: DB_PORT,
