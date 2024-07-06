@@ -1569,12 +1569,12 @@
 		},
 		{
 			"key": "user_token",
-			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwibmFtZSI6ImpvZXMiLCJpc19hZG1pbiI6ZmFsc2UsImVuY19wYXNzIjoiJDJhJDEwJGJBQUZWb1Y1VGNSNXU3NUVsR3Jmby5VOWxRTDVKSS5XNlh0cDZBTS8wYXZNZlREZHVMZno2IiwiY3JlYXRlZEF0IjoiMjAyNC0wNy0wNVQwOTo1MDo1Ny40MDRaIiwidXBkYXRlZEF0IjoiMjAyNC0wNy0wNVQwOTo1MDo1Ny40MDRaIiwiaWF0IjoxNzIwMTczMzkxfQ.xsqyRRq2_K_JxTWZGIFRZ7BKCXLr0GDWJF5fmXPDBA0",
+			"value": "",
 			"type": "string"
 		},
 		{
 			"key": "admin_token",
-			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6ImFkbWluIiwiaXNfYWRtaW4iOnRydWUsImVuY19wYXNzIjoiJDJhJDEwJEV6TFZ5SUg3TEt5cUpsR0V0QXVoZGVxUWNLYk0xSXd5S0tPWmZXVk9FL3lNTml5OXF3QlY2IiwiY3JlYXRlZEF0IjoiMjAyNC0wNy0wM1QxMjoyNzoyNS40NTlaIiwidXBkYXRlZEF0IjoiMjAyNC0wNy0wNVQwOTozMTozNS41NDZaIiwiaWF0IjoxNzIwMTczNDI5fQ.77REJABE9Irj8hD_GO-dyJMvzhFHsh322boseBegLpY",
+			"value": "",
 			"type": "string"
 		}
 	]
